@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<title>Compare</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Tangerine&display=swap" rel="stylesheet">
+ <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+ </head>
+ <body>
+<!-- navbar -->
+<body class="background">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/final logo.png" style="width: 200px;" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" style="font-family: cursive;" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" style="font-family: cursive;" href="about us.html">About</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" style="font-family: cursive;" href="branda.html">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-family: cursive;" href="console.html">Console</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-family: cursive;" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-family: cursive;" href="compare.html">Compare</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- navbar close -->
+    <br><br>
+<!-- compare card start -->
+ <div class="container">
+ <h1 class="text-center display-3 text-uppercase my-5 fw-bold " style="color: #ff9933; text-decoration: underline goldenrod; font-family: 'Lobster', cursive; ">Compare page</h1>
+
+ <div class="row mt-5">
+ <div class="col-lg-6 col-md-12">
+ <div class="form-group">
+ <label style="color: #ff9933; font-size: 20px; font-family: cursive;" class="fw-bold" >Pubg Mobile</label>
+ <select id="brand1" onchange="Brand_One()" class="form-select">
+ <option selected class="text-warning fw-bold" >Select...</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Key Specs</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">General</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Release date</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Platform</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Publisher</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Age Rating (PEGI)</option>
+ </select>
+
+ </div>
+<!-- option div close -->
+ <div class="form-group">
+ <div class="card border-4 border-warning">
+ <div class="card-body text-center">
+ <img src="img/slide-2.jpg" class="img-fluid text-center"id="img1">
+ <div class="card-title text-center">
+ <h2 id="text1" style="color: #ff9933; font-family: cursive;" class="mt-2">Pubg Mobile</h2>
+ <!-- <h5 id="text2" style"></h5> -->
+ <p id="text3" class="text-center" style="font-family: 'Times New Roman', Times, serif;">PlayerUnknown's Battlegrounds is an online multiplayer battle royale game developed and published by PUBG Corporation.</p>
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+<!-- card div close -->
+ </div>
+ <!-- col div close -->
+
+ <div class="col-lg-6 col-md-12">
+ <div class="form-group">
+ <label style="color: #ff9933; font-size: 20px; font-family: cursive;" class="fw-bold">Free Fire</label>
+ <select id="brand2" onchange="Brand_two()" class="form-select">
+ <option selected class="text-warning fw-bold">Select...</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Key Specs</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">General</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Release Date</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Platform</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Publisher</option>
+ <option class="" style="color: #ff9933; font-family: cursive;">Age Rating (PEGI)</option>
+ </select>
+
+ </div>
+<!-- option div close -->
+ <div class="form-group">
+ <div class="card border-4 border-warning">
+ <div class="card-body text-center">
+ <img src="img/free.jpg" class="img-fluid" id="img2">
+ <div class="card-title text-center">
+ <h2 id="text4" style="color: #ff9933; font-family: cursive;" class="mt-2" >Free Fire</h2>
+ <!-- <h5 id="text5"  ></h5> -->
+ <p id="text6" class="text-center text-dark" style="font-family: 'Times New Roman', Times, serif; ">Free Fire is a multiplayer online battle arena video game developed by Valve Corporation.The game is a Defense of the Ancients.</p>
+
+ </div>
+ </div>
+ </div>
+ </div>
+<!-- card close -->
+<!-- <img src="./compare image/1.jpg" alt=""> -->
+ </div>
+<!-- <img src="img/slide-2.jpg" alt="" style="height: 200px;"> -->
+ </div>
+ </div>
+ <script>
+
+  function Brand_One()
+  {
+ 
+  var Productone=document.getElementById("brand1").selectedIndex;
+ 
+ 
+  if(Productone==1)
+  {
+  document.getElementById("img1").src="./compare image/1.jpg" ;
+  document.getElementById("img1").style="height:300px" ;
+  document.getElementById("text1").innerHTML="Genre";
+  document.getElementById("text2").innerHTML="Battle Royale";
+  document.getElementById("text3").innerHTML="";
+ 
+  }
+  if(Productone==2)
+  {
+  document.getElementById("img1").src="./compare image/2.jfif";
+  document.getElementById("text1").innerHTML="Brand";
+  document.getElementById("text2").innerHTML="Krafton";
+  document.getElementById("text3").innerHTML="";
+ 
+  }
+ 
+  if(Productone==3)
+  {
+  document.getElementById("img1").src="./compare image/3.jfif";
+  document.getElementById("text1").innerHTML="Release Date";
+  document.getElementById("text2").innerHTML="March 19,2018";
+  document.getElementById("text3").innerHTML="jadd";
+ 
+  }
+  if(Productone==4)
+  {
+  document.getElementById("img1").src="./compare image/4.jfif";
+  document.getElementById("text1").innerHTML="Platform";
+  document.getElementById("text2").innerHTML="Android,iOS,iPadOS";
+  document.getElementById("text3").innerHTML="";
+ 
+  }
+  if(Productone==5)
+  {
+  document.getElementById("img1").src="./compare image/5.jfif";
+  document.getElementById("text1").innerHTML="Publisher";
+  document.getElementById("text2").innerHTML="Tencent Games";
+  document.getElementById("text3").innerHTML="";
+ 
+  }
+ 
+  if(Productone==6)
+  {
+  document.getElementById("img1").src="./compare image/6.jfif";
+  document.getElementById("text1").innerHTML="Age Rating (PEGI)";
+  document.getElementById("text2").innerHTML="16+";
+  document.getElementById("text3").innerHTML="";
+ 
+  }
+  }
+ 
+ 7
+ 
+  function Brand_two()
+  {
+ 
+  var Producttwo=document.getElementById("brand2").selectedIndex;
+ 
+ 
+  if(Producttwo==1)
+  {
+  document.getElementById("img2").src="./compare image/free1.jfif";
+  document.getElementById("img2").style="height:300px" ;
+  document.getElementById("text4").innerHTML="Genre";
+  document.getElementById("text5").innerHTML="Battle Royale";
+  document.getElementById("text6").innerHTML="";
+ 
+  }
+  if(Producttwo==2)
+  {
+  document.getElementById("img2").src="./compare image/free2.jfif";
+  document.getElementById("text4").innerHTML="Brand";
+  document.getElementById("text5").innerHTML="Garena";
+  document.getElementById("text6").innerHTML="August 23, 2017";
+ 
+  }
+
+  if(Producttwo==3)
+  {
+  document.getElementById("img2").src="./compare image/free3.jfif";
+  document.getElementById("text4").innerHTML="Release Date  ";
+  document.getElementById("text5").innerHTML="August 23,2017";
+  document.getElementById("text6").innerHTML="";
+ 
+  }
+
+  if(Producttwo==4)
+  {
+  document.getElementById("img2").src="./compare image/free4.jfif";
+  document.getElementById("text4").innerHTML="Platform ";
+ 
+  document.getElementById("text5").innerHTML="Android,iOS,iPadOS";
+  document.getElementById("text6").innerHTML="";
+ 
+  }
+
+
+  if(Producttwo==5)
+  {
+  document.getElementById("img2").src="./compare image/free5.jfif";
+  document.getElementById("text4").innerHTML="PUblisher";
+ 
+  document.getElementById("text5").innerHTML="Garena"
+  document.getElementById("text6").innerHTML="";
+ 
+  }
+
+  if(Producttwo==6)
+  {
+  document.getElementById("img2").src="./compare image/free6.jfif";
+  document.getElementById("text4").innerHTML="Age Rating (PEGI)";
+ 
+  document.getElementById("text5").innerHTML="18+";
+  document.getElementById("text6").innerHTML="";
+ 
+  }
+
+  }
+ 
+  </script>
+
+ 
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+ <!-- <div class="container-fluid"> -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted mt-5" style="background-color: wheat; font-weight: bold;"  >
+      
+      <section class="">
+        <div class="container-fluid text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row bg-dark">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <img src="img/final logo.png" style="width: 200px;" class="mt-5" alt="">
+              <h6 class="text-uppercase fw-bold mt-5"  style=" font-family: 'Lobster', cursive; color: #ff9933;"><i class="fas fa-gem me-3 text-secondary"></i>Company name</h6>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;">
+               My Company Name Is Tangoline.In my company You play all form games.You play high quality games and play a free games. 
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mt-5" style=" font-family: 'Lobster', cursive; color: #ff9933;">
+                Brands
+              </h6>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en&gl=US&pli=1" class="text-reset"style="text-decoration: none;">Tencent</a></p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="https://www.gameloft.com/" class="text-reset" style="text-decoration: none;">Gameloft</a></p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="https://ff.garena.com/en/" class="text-reset"style="text-decoration: none;"  >Garena</a></p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="https://www.rockstargames.com/gta-v" class="text-reset"style="text-decoration: none;">RockStar</a></p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-5">
+    
+              <h6 class="text-uppercase fw-bold mb-4"  style=" font-family: 'Lobster', cursive; color: #ff9933;">
+                Useful links
+              </h6>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="index.html" class="text-reset"style="text-decoration: none;">Home</a></p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="about us.html" class="text-reset"style="text-decoration: none;">About</a></p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="compare.html" class="text-reset"style="text-decoration: none;">Compare</a></p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><a href="console.html" class="text-reset"style="text-decoration: none;">Console</a></p>
+            </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mt-5"  style=" font-family: 'Lobster', cursive; color: #ff9933;">Contact</h6>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><i class="fas fa-home me-3 text-secondary"></i>XYZ Area Karachi,Pakistan</p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><i class="fas fa-envelope me-3 text-secondary"></i>Contact Us</p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+              <p style="font-family: 'Times New Roman', Times, serif; color: white;"><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+            </div>
+      <div class="text-center p-4 bg-dark" style=" color: white; font-family: cursive;">
+        © 2023 Copyright:<span style="color: #ff9933;">Tangoline Project</span>
+      </div>
+          </div>
+          <!-- footer row close -->
+        <!-- </div> -->
+        <!-- footer container close -->
+      </section>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+ </body>
+ </html>
