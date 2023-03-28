@@ -1,0 +1,54 @@
+.background{
+  background-image: url(./img/card-1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
+.card{
+  overflow: hidden;
+}
+
+.nav-link{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.text-footre{
+   text-align: center;
+    padding: 30px 0;
+    color: white;
+    background-color: black;
+}
+
+.active{
+  color:#ff9933 !important;
+}
+
+
+.col img:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+/* 
+.col{
+  overflow: hidden;
+} */
+
+/* .nav-link{
+  font-size: 20px;
+  font-weight: 500;
+} */
+
+.text-footre{
+   text-align: center;
+    padding: 30px 0;
+    color: white;
+    background-color: black;
+}
